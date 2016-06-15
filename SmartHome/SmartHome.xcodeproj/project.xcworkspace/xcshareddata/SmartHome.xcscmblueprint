@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B81471C2BA519052214ED4AF661D6A8E20B5AF3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B81471C2BA519052214ED4AF661D6A8E20B5AF3D" : 0,
+    "19A4ADEE0AED0DD10C6A2A96AB797FA50C6105B2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6E00A0A6-3BB0-474E-A5BE-188078F82AD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B81471C2BA519052214ED4AF661D6A8E20B5AF3D" : "SmartHome\/",
+    "19A4ADEE0AED0DD10C6A2A96AB797FA50C6105B2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SmartHome",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SmartHome\/SmartHome.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GeekBand\/GeekBand-I150001.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19A4ADEE0AED0DD10C6A2A96AB797FA50C6105B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JixinZhang\/SmartHome.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B81471C2BA519052214ED4AF661D6A8E20B5AF3D"
+    }
+  ]
+}

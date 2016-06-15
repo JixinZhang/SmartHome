@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B81471C2BA519052214ED4AF661D6A8E20B5AF3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B81471C2BA519052214ED4AF661D6A8E20B5AF3D" : 0,
+    "19A4ADEE0AED0DD10C6A2A96AB797FA50C6105B2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E42D03C3-1B59-41CC-B0F3-C3A41685B8A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B81471C2BA519052214ED4AF661D6A8E20B5AF3D" : "SmartHome\/",
+    "19A4ADEE0AED0DD10C6A2A96AB797FA50C6105B2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AlexSmartHome",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AlexSmartHome\/AlexSmartHome.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GeekBand\/GeekBand-I150001.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19A4ADEE0AED0DD10C6A2A96AB797FA50C6105B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JixinZhang\/SmartHome.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B81471C2BA519052214ED4AF661D6A8E20B5AF3D"
+    }
+  ]
+}

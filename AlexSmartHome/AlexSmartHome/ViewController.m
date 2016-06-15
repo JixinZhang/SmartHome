@@ -22,8 +22,6 @@ static NSString *const yeelinkAPI = @"http://api.yeelink.net/v1.0/device/345323/
     [super viewDidLoad];
     [self getTempture];
     [self getTemptureWithNSURLConnection];
-//    [self anticlockwiseRequest];
-//    [self clockwiseRequest];
     [self stopRequest];
 }
 
@@ -58,10 +56,19 @@ static NSString *const yeelinkAPI = @"http://api.yeelink.net/v1.0/device/345323/
     }];
 }
 
+#pragma mark - 获取温度数据网络请求
+
 - (void) getTempture {
+    //网络请求的url
     NSString *urlString = @"http://api.yeelink.net/v1.0/device/345323/sensor/384354.json?start=2016-02-02T14:01:46&end=2016-05-03T18:17:40&interval=1&page=1";
+    //初始化requset
     AlexRequest *request = [[AlexRequest alloc] init];
     request.url = urlString;
+    
+    /*调用AlexNetworking类的下面这个方法
+     1）+ (AlexURLSessionTask *)getWithRequest:(AlexRequest *)request success:(AlexResponseSuccess)success fail:(AlexResponseFail)fail
+     2）在网络请求成功后
+     */
     [AlexNetworking getWithRequest:request success:^(AlexResponse *response) {
         NSArray *dataArray = [response.resultDic valueForKey:@"data"];
         NSLog(@"%@",dataArray);
