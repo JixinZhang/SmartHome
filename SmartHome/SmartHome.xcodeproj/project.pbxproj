@@ -31,7 +31,35 @@
 		78EEA5B71CD838BC00417766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EEA5B51CD838BC00417766 /* Main.storyboard */; };
 		78EEA5B91CD838BC00417766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EEA5B81CD838BC00417766 /* Assets.xcassets */; };
 		78EEA5BC1CD838BC00417766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EEA5BA1CD838BC00417766 /* LaunchScreen.storyboard */; };
+		DA73CD5E1EADDBA600B94E0B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA73CD5D1EADDBA600B94E0B /* NotificationCenter.framework */; };
+		DA73CD621EADDBA600B94E0B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA73CD611EADDBA600B94E0B /* TodayViewController.m */; };
+		DA73CD651EADDBA600B94E0B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73CD631EADDBA600B94E0B /* MainInterface.storyboard */; };
+		DA73CD691EADDBA600B94E0B /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA73CD5B1EADDBA600B94E0B /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA73CD671EADDBA600B94E0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78EEA5A11CD838BC00417766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA73CD5A1EADDBA600B94E0B;
+			remoteInfo = Widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA73CD6D1EADDBA600B94E0B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA73CD691EADDBA600B94E0B /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		780BEB361CD907370082C24F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -81,6 +109,12 @@
 		78EEA5B81CD838BC00417766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78EEA5BB1CD838BC00417766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78EEA5BD1CD838BC00417766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA73CD5B1EADDBA600B94E0B /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA73CD5D1EADDBA600B94E0B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		DA73CD601EADDBA600B94E0B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		DA73CD611EADDBA600B94E0B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		DA73CD641EADDBA600B94E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DA73CD661EADDBA600B94E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +122,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA73CD581EADDBA600B94E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA73CD5E1EADDBA600B94E0B /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				78EEA5AB1CD838BC00417766 /* SmartHome */,
+				DA73CD5F1EADDBA600B94E0B /* Widget */,
+				DA73CD5C1EADDBA600B94E0B /* Frameworks */,
 				78EEA5AA1CD838BC00417766 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -164,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				78EEA5A91CD838BC00417766 /* SmartHome.app */,
+				DA73CD5B1EADDBA600B94E0B /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +240,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DA73CD5C1EADDBA600B94E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA73CD5D1EADDBA600B94E0B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA73CD5F1EADDBA600B94E0B /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				DA73CD601EADDBA600B94E0B /* TodayViewController.h */,
+				DA73CD611EADDBA600B94E0B /* TodayViewController.m */,
+				DA73CD631EADDBA600B94E0B /* MainInterface.storyboard */,
+				DA73CD661EADDBA600B94E0B /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,15 +269,34 @@
 				78EEA5A51CD838BC00417766 /* Sources */,
 				78EEA5A61CD838BC00417766 /* Frameworks */,
 				78EEA5A71CD838BC00417766 /* Resources */,
+				DA73CD6D1EADDBA600B94E0B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA73CD681EADDBA600B94E0B /* PBXTargetDependency */,
 			);
 			name = SmartHome;
 			productName = SmartHome;
 			productReference = 78EEA5A91CD838BC00417766 /* SmartHome.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DA73CD5A1EADDBA600B94E0B /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA73CD6A1EADDBA600B94E0B /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				DA73CD571EADDBA600B94E0B /* Sources */,
+				DA73CD581EADDBA600B94E0B /* Frameworks */,
+				DA73CD591EADDBA600B94E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = DA73CD5B1EADDBA600B94E0B /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -226,7 +309,12 @@
 				TargetAttributes = {
 					78EEA5A81CD838BC00417766 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = C9S2BZUJTW;
+						DevelopmentTeam = 4RTMSXL9KV;
+					};
+					DA73CD5A1EADDBA600B94E0B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 4RTMSXL9KV;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -244,6 +332,7 @@
 			projectRoot = "";
 			targets = (
 				78EEA5A81CD838BC00417766 /* SmartHome */,
+				DA73CD5A1EADDBA600B94E0B /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +346,14 @@
 				78EEA5B91CD838BC00417766 /* Assets.xcassets in Resources */,
 				780BEB601CD907370082C24F /* LICENSE in Resources */,
 				78EEA5B71CD838BC00417766 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA73CD591EADDBA600B94E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA73CD651EADDBA600B94E0B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +387,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA73CD571EADDBA600B94E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA73CD621EADDBA600B94E0B /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA73CD681EADDBA600B94E0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA73CD5A1EADDBA600B94E0B /* Widget */;
+			targetProxy = DA73CD671EADDBA600B94E0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		78EEA5B51CD838BC00417766 /* Main.storyboard */ = {
@@ -307,6 +420,14 @@
 				78EEA5BB1CD838BC00417766 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA73CD631EADDBA600B94E0B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA73CD641EADDBA600B94E0B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,9 +518,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4RTMSXL9KV;
 				INFOPLIST_FILE = SmartHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.SmartHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.Home;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -409,10 +531,49 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4RTMSXL9KV;
 				INFOPLIST_FILE = SmartHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.SmartHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.Home;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA73CD6B1EADDBA600B94E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4RTMSXL9KV;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.Home.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA73CD6C1EADDBA600B94E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4RTMSXL9KV;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjixin.Home.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -436,6 +597,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DA73CD6A1EADDBA600B94E0B /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA73CD6B1EADDBA600B94E0B /* Debug */,
+				DA73CD6C1EADDBA600B94E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
