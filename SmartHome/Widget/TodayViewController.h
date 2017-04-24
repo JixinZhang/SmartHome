@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayViewController : UIViewController
+@interface TodayViewController : UIViewController<NSURLSessionDelegate>
+
+@property (nonatomic, strong) UIButton *switchBtn;
 
 @end
