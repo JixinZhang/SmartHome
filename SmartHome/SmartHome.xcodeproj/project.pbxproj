@@ -35,6 +35,8 @@
 		DA73CD621EADDBA600B94E0B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA73CD611EADDBA600B94E0B /* TodayViewController.m */; };
 		DA73CD651EADDBA600B94E0B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73CD631EADDBA600B94E0B /* MainInterface.storyboard */; };
 		DA73CD691EADDBA600B94E0B /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA73CD5B1EADDBA600B94E0B /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA73CD701EADDECE00B94E0B /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA73CD6F1EADDECE00B94E0B /* HomeKit.framework */; };
+		DA73CD721EADDF6900B94E0B /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA73CD6F1EADDECE00B94E0B /* HomeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,9 @@
 		DA73CD611EADDBA600B94E0B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		DA73CD641EADDBA600B94E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DA73CD661EADDBA600B94E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA73CD6E1EADDECE00B94E0B /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		DA73CD6F1EADDECE00B94E0B /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		DA73CD711EADDF6900B94E0B /* SmartHome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartHome.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA73CD721EADDF6900B94E0B /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA73CD701EADDECE00B94E0B /* HomeKit.framework in Frameworks */,
 				DA73CD5E1EADDBA600B94E0B /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +223,7 @@
 		78EEA5AB1CD838BC00417766 /* SmartHome */ = {
 			isa = PBXGroup;
 			children = (
+				DA73CD711EADDF6900B94E0B /* SmartHome.entitlements */,
 				780BEB341CD907370082C24F /* AFNetworking */,
 				78EEA5AF1CD838BC00417766 /* AppDelegate.h */,
 				78EEA5B01CD838BC00417766 /* AppDelegate.m */,
@@ -243,6 +251,7 @@
 		DA73CD5C1EADDBA600B94E0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA73CD6F1EADDECE00B94E0B /* HomeKit.framework */,
 				DA73CD5D1EADDBA600B94E0B /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -251,6 +260,7 @@
 		DA73CD5F1EADDBA600B94E0B /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				DA73CD6E1EADDECE00B94E0B /* Widget.entitlements */,
 				DA73CD601EADDBA600B94E0B /* TodayViewController.h */,
 				DA73CD611EADDBA600B94E0B /* TodayViewController.m */,
 				DA73CD631EADDBA600B94E0B /* MainInterface.storyboard */,
@@ -310,11 +320,21 @@
 					78EEA5A81CD838BC00417766 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 4RTMSXL9KV;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 					DA73CD5A1EADDBA600B94E0B = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 4RTMSXL9KV;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -517,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartHome/SmartHome.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4RTMSXL9KV;
 				INFOPLIST_FILE = SmartHome/Info.plist;
@@ -530,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartHome/SmartHome.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4RTMSXL9KV;
 				INFOPLIST_FILE = SmartHome/Info.plist;
@@ -547,6 +569,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4RTMSXL9KV;
 				INFOPLIST_FILE = Widget/Info.plist;
@@ -566,6 +589,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4RTMSXL9KV;
 				INFOPLIST_FILE = Widget/Info.plist;
